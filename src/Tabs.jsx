@@ -42,7 +42,7 @@ export function Tabs() {
               <button
                 key={idx}
                 ref={(el) => (tabsRef.current[idx] = el)}
-                className="pt-2 pb-3"
+                className="pt-2 pb-3 px-2"
                 onClick={() => setActiveTabIndex(idx)}
               >
                 {tab.label}
@@ -51,7 +51,7 @@ export function Tabs() {
           })}
         </div>
         <span
-          className="absolute inset-y-0 h-full opacity-20 bottom-0 block h-1 bg-teal-500 transition-all duration-300"
+          className="absolute inset-y-0 h-full opacity-20 bottom-0 block  bg-teal-500 transition-all duration-300"
           style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
         />
       </div>
